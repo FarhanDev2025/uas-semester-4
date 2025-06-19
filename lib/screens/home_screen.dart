@@ -1,3 +1,4 @@
+import 'package:app_jualan/screens/product_details_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -250,9 +251,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ),
                           TextButton(
-                            onPressed: () {
-                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductCategoriesScreen()))
-                            },
+                            onPressed: () {},
                             child: Text(
                               "View All",
                               style: TextStyle(color: AppTheme.primaryColor),
@@ -270,7 +269,12 @@ class HomeScreen extends StatelessWidget {
                         itemBuilder: (context, index) {
                           return InkWell(
                             onTap: () {
-                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductDetailsScreen()))
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ProductDetailsScreen(),
+                                ),
+                              );
                             },
                             child: Container(
                               width: 200,
@@ -496,23 +500,31 @@ class HomeScreen extends StatelessWidget {
                                             ),
                                           ),
                                           Container(
-                                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                            padding: EdgeInsets.symmetric(
+                                              horizontal: 12,
+                                              vertical: 6,
+                                            ),
                                             decoration: BoxDecoration(
-                                              color: AppTheme.primaryColor.withOpacity(0.1),
-                                              borderRadius: BorderRadius.circular(20),
+                                              color: AppTheme.primaryColor
+                                                  .withOpacity(0.1),
+                                              borderRadius:
+                                                  BorderRadius.circular(20),
                                             ),
                                             child: Row(
                                               children: [
-                                                Icon(Icons.star,
-                                                size: 16,
-                                                color: AppTheme.warning,
+                                                Icon(
+                                                  Icons.star,
+                                                  size: 16,
+                                                  color: AppTheme.warning,
                                                 ),
                                                 SizedBox(width: 4),
-                                                Text("4.5",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  color: AppTheme.textPrimary,
-                                                ),),
+                                                Text(
+                                                  "4.5",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: AppTheme.textPrimary,
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           ),
