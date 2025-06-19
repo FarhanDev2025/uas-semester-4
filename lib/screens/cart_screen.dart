@@ -1,3 +1,4 @@
+import 'package:app_jualan/screens/checkout_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:app_jualan/widgets/gradient_button.dart';
 import 'package:flutter/material.dart';
@@ -301,7 +302,13 @@ class CartScreen extends StatelessWidget {
         child: SafeArea(
           child: GradientButton(
             text: "Proceed to Checkoutt (Rp.99.999)",
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CheckoutScreen(),
+                ),
+              );
+            },
           ),
         ),
       ),
