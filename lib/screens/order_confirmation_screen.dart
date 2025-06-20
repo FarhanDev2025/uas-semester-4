@@ -1,4 +1,5 @@
 import 'package:app_jualan/screens/main_screen.dart';
+import 'package:app_jualan/screens/order_tracking_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:app_jualan/widgets/gradient_button.dart';
 import 'package:flutter/material.dart';
@@ -419,7 +420,12 @@ class _OrderConfirmationScreenState extends State<OrderConfirmationScreen> {
             children: [
               Expanded(
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => OrderTrackingScreen()),
+                    );
+                  },
                   style: OutlinedButton.styleFrom(
                     padding: EdgeInsets.symmetric(vertical: 16),
                     side: BorderSide(color: AppTheme.primaryColor),
