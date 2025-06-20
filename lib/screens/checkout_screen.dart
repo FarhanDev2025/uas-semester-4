@@ -425,6 +425,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                     ],
                   ),
                 ),
+                SizedBox(height: 100),
               ],
             ),
           ),
