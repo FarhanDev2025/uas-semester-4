@@ -1,3 +1,4 @@
+import 'package:app_jualan/screens/payment_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:app_jualan/widgets/gradient_button.dart';
 import 'package:flutter/material.dart';
@@ -447,7 +448,8 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => CheckoutScreen()),
+                MaterialPageRoute(builder: (context) => PaymentScreen()
+                ),
               );
             },
           ),
