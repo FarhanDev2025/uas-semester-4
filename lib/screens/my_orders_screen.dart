@@ -1,8 +1,9 @@
+import 'package:app_jualan/screens/order_details_screen.dart';
 import 'package:app_jualan/screens/order_tracking_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:flutter/material.dart';
 
-class OrderListScreen extends StatelessWidget {
+class MyOrdersScreen extends StatelessWidget {
   final orders = [
     {
       'orderId': '12345',
@@ -273,12 +274,12 @@ class OrderListScreen extends StatelessWidget {
                       items: order['items'] as List<String>,
                       total: order['total'] as double,
                       onTap: () {
-                        //   Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //       builder: (context) =>OrderDetailsScreen,
-                        //     ),
-                        //   );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => OrderDetailsScreen(),
+                          ),
+                        );
                       },
                       context: context,
                     ),
