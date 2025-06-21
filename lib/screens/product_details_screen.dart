@@ -1,3 +1,4 @@
+import 'package:app_jualan/screens/ratings_reviews_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:app_jualan/widgets/gradient_button.dart';
 import 'package:flutter/material.dart';
@@ -412,7 +413,15 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                                 ),
                               ),
                               TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder:
+                                          (context) => RatingsReviewsScreen(),
+                                    ),
+                                  );
+                                },
                                 child: Text("view All"),
                               ),
                             ],
