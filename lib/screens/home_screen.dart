@@ -1,3 +1,4 @@
+import 'package:app_jualan/screens/categories_screen.dart';
 import 'package:app_jualan/screens/product_details_screen.dart';
 import 'package:app_jualan/screens/search_filter_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
@@ -166,7 +167,12 @@ class HomeScreen extends StatelessWidget {
                           ),
                           TextButton(
                             onPressed: () {
-                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductCategoriesScreen()))
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => CategoriesScreen(),
+                                ),
+                              );
                             },
                             child: Text(
                               "View All",

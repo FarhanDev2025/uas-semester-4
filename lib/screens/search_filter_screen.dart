@@ -723,7 +723,7 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
   }
 
   void _showSortBottomSheet() {
-    showBottomSheet(
+    showModalBottomSheet(
       context: context,
       backgroundColor: Colors.transparent,
 
@@ -785,6 +785,7 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppTheme.primaryColor,
+                      foregroundColor: Colors.white,
                       minimumSize: Size.fromHeight(50),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
