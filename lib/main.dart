@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
       title: 'jualan',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: MyOrdersScreen(),
+      home: MainScreen(),
     );
   }
 }
