@@ -1,3 +1,4 @@
+import 'package:app_jualan/screens/chat_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -154,7 +155,12 @@ class ChatListScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     final chat = chatList[index];
                     return InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ChatScreen()),
+                        );
+                      },
                       child: Container(
                         margin: EdgeInsets.symmetric(
                           vertical: 5,
