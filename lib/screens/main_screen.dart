@@ -2,6 +2,7 @@ import 'package:app_jualan/screens/cart_screen.dart';
 import 'package:app_jualan/screens/chat_screen.dart';
 import 'package:app_jualan/screens/home_screen.dart';
 import 'package:app_jualan/screens/profile_screen.dart';
+import 'package:app_jualan/screens/wishlist_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,7 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _screens = [
     HomeScreen(),
+    WishlistScreen(),
     ChatScreen(),
     CartScreen(),
     ProfileScreen(),
@@ -52,13 +54,14 @@ class _MainScreenState extends State<MainScreen> {
                   _buildNavItem(0, Icons.home_outlined, Icons.home, 'Home'),
                   _buildNavItem(
                     1,
-                    Icons.favorite_outline,
-                    Icons.chat,
+                    Icons.bookmarks_outlined,
+                    Icons.bookmarks,
                     'Wishlist',
                   ),
+                  _buildNavItem(2, Icons.chat_outlined, Icons.chat, 'Chat'),
                   _buildCartNavItem(),
                   _buildNavItem(
-                    3,
+                    4,
                     Icons.person_outlined,
                     Icons.person,
                     'Profile',
@@ -117,9 +120,9 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   Widget _buildCartNavItem() {
-    bool isSelected = _currentIndex == 2;
+    bool isSelected = _currentIndex == 3;
     return GestureDetector(
-      onTap: () => setState(() => _currentIndex = 2),
+      onTap: () => setState(() => _currentIndex = 3),
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration:

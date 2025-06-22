@@ -1,4 +1,5 @@
 import 'package:app_jualan/screens/categories_screen.dart';
+import 'package:app_jualan/screens/notifications_screen.dart';
 import 'package:app_jualan/screens/product_details_screen.dart';
 import 'package:app_jualan/screens/search_filter_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
@@ -94,7 +95,14 @@ class HomeScreen extends StatelessWidget {
             ),
             actions: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => NotificationsScreen(),
+                    ),
+                  );
+                },
                 icon: Icon(
                   Icons.notifications_outlined,
                   color: Colors.white,
