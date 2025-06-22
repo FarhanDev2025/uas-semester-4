@@ -1,4 +1,5 @@
 import 'package:app_jualan/screens/cart_screen.dart';
+import 'package:app_jualan/screens/chat_list_screen.dart';
 import 'package:app_jualan/screens/chat_screen.dart';
 import 'package:app_jualan/screens/home_screen.dart';
 import 'package:app_jualan/screens/profile_screen.dart';
@@ -19,7 +20,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _screens = [
     HomeScreen(),
     WishlistScreen(),
-    ChatScreen(),
+    ChatListScreen(),
     CartScreen(),
     ProfileScreen(),
   ];
