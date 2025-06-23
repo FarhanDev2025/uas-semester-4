@@ -1,3 +1,5 @@
+import 'package:app_jualan/screens/my_orders_screen.dart';
+import 'package:app_jualan/screens/user_details_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -288,7 +290,14 @@ class ProfileScreen extends StatelessWidget {
                                 icon: Icons.person_outline,
                                 title: 'Personal Details',
                                 subtitle: "Update your personal information",
-                                onTap: () {},
+                                onTap: () {
+                                   Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => UserDetailsScreen(),
+                                    ),
+                                  );
+                                },
                                 color: AppTheme.primaryColor,
                               ),
                               _buildMenuItem(
@@ -315,21 +324,43 @@ class ProfileScreen extends StatelessWidget {
                                 icon: Icons.shopping_bag_outlined,
                                 title: 'My Orders',
                                 subtitle: "View your order history",
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => MyOrdersScreen(),
+                                    ),
+                                  );
+                                },
                                 color: AppTheme.secondaryColor,
                               ),
                               _buildMenuItem(
                                 icon: Icons.location_on_outlined,
                                 title: 'Shipping Address',
                                 subtitle: "manage your delivery addresess",
-                                onTap: () {},
+                                onTap: () {
+                                   Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder:
+                                          (context) => UserDetailsScreen(),
+                                    ),
+                                  );
+                                },
                                 color: AppTheme.secondaryColor,
                               ),
                               _buildMenuItem(
                                 icon: Icons.payment_outlined,
                                 title: 'Notifacations',
                                 subtitle: "Manage your payment options",
-                                onTap: () {},
+                                onTap: () {
+                                  // Navigator.push(
+                                  //   context,
+                                  //   MaterialPageRoute(
+                                  //     builder: (context) => ChangePasswordScreen(),
+                                  //   ),
+                                  // );
+                                },
                                 color: AppTheme.secondaryColor,
                               ),
                             ],

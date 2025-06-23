@@ -25,7 +25,9 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key}); //super.key (artinya merujuk pada file diri sendiri)//
+  const MyApp({
+    super.key,
+  }); //super.key (artinya merujuk pada file diri sendiri)//
 
   @override
   Widget build(BuildContext context) {
