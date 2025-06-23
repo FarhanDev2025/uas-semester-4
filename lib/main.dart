@@ -39,13 +39,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'jualan',
-//       debugShowCheckedModeBanner: false,
-//       theme: AppTheme.lightTheme,
-//       home: MainScreen(),
-//     );
-//   }
-// }
