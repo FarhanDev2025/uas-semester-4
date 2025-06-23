@@ -3,7 +3,8 @@
 menu tampilan awal
 memasuki menu tampilan
 
-![Uploading ok.png…]()
+![Tampilan Awal](assets/images/ok.png)
+
 
 
 
