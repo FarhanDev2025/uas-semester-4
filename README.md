@@ -3,7 +3,9 @@
 menu tampilan awal
 memasuki menu tampilan
 
-A new Flutter project.
+![Uploading ok.png…]()
+
+
 
 ## Getting Started
 
