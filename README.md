@@ -3,7 +3,10 @@
 menu tampilan awal
 memasuki menu tampilan
 
-A new Flutter project.
+<a href="https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/main/assets/images/ok.png">
+  <img src="https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/main/assets/images/ok.png" width="300"/>
+</a>
+
 
 ## Getting Started
 
