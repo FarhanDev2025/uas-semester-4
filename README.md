@@ -1,5 +1,7 @@
 # app_jualan
 
+ada sebagian gambar lagi, mohon maaf karena gak di uploud karena terlalu banyak, ada sebagian gambar detail detail, dan saya hanya menampilkan intinya saja, terimakasih
+
 
 ![Tampilan Awal](https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/part_14/hasil.png)
 
