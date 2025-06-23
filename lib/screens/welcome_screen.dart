@@ -1,4 +1,5 @@
 import 'package:app_jualan/screens/login_screen.dart';
+import 'package:app_jualan/screens/main_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:app_jualan/widgets/gradient_button.dart';
 import 'package:flutter/material.dart';
@@ -77,10 +78,10 @@ class WelcomeScreen extends StatelessWidget {
                   GradientButton(
                     text: "Get Started",
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => SignUpScreen()));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MainScreen()));
                     },
                   ),
                   SizedBox(height: 20),

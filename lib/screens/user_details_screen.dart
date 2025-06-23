@@ -1,3 +1,4 @@
+import 'package:app_jualan/screens/edit_user_details_screen.dart';
 import 'package:app_jualan/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -125,7 +126,14 @@ class UserDetailsScreen extends StatelessWidget {
                       IconButton(
                         icon: Icon(Icons.edit),
                         color: Colors.white,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => EditUserDetailsScreen(),
+                            ),
+                          );
+                        },
                       ),
                     ],
                   ),
