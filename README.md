@@ -3,9 +3,10 @@
 menu tampilan awal
 memasuki menu tampilan
 
-<a href="assets/images/ok.png">
-  <img src="assets/images/ok.png" width="300"/>
+<a href="https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/main/assets/images/ok.png">
+  <img src="https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/main/assets/images/ok.png" width="300"/>
 </a>
+
 
 
 
