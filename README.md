@@ -3,7 +3,10 @@
 menu tampilan awal
 memasuki menu tampilan
 
-![Tampilan Awal](assets/images/ok.png)
+<a href="assets/images/ok.png">
+  <img src="assets/images/ok.png" width="300"/>
+</a>
+
 
 
 
