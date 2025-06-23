@@ -1,11 +1,9 @@
 # app_jualan
 
-menu tampilan awal
-memasuki menu tampilan
+menu tampilan awal memasuki menu tampilan
 
-<a href="https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/main/assets/images/ok.png">
-  <img src="https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/main/assets/images/ok.png" width="300"/>
-</a>
+![Tampilan Awal](https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/part_14/hasil.png)
+
 
 
 ## Getting Started
