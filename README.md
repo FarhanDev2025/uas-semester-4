@@ -1,6 +1,5 @@
 # app_jualan
 
-menu tampilan awal memasuki menu tampilan
 
 ![Tampilan Awal](https://raw.githubusercontent.com/FarhanDev2025/uas-semester-4/part_14/hasil.png)
 
